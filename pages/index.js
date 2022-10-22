@@ -37,6 +37,20 @@ export default function Home() {
           <div>
             <Image src="/baby1.jpg" alt="NFT" width={400} height={400} />
             <p>Very expensive art piece 2</p>
+            <button
+              onClick={() => {
+                checkout({
+                  lineItems: [
+                    {
+                      price: "price_1LvophCBi5rQFo0PBem8fiAJ",
+                      quantity: 1,
+                    },
+                  ],
+                });
+              }}
+            >
+              BUY NOW!
+            </button>
           </div>
         </div>
       </main>
